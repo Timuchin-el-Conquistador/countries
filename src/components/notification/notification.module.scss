@@ -1,0 +1,19 @@
+$font: calc(10px + 1vw);
+
+.notification{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font;
+
+}
+.success{
+    background-color: green;
+}
+.proceeding{
+    background-color: rgb(20, 92, 70);
+}
+.failed{
+    background-color: red;
+}

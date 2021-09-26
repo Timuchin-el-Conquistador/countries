@@ -1,0 +1,25 @@
+$padding: calc(10px + 1vh);
+
+.ui__input{
+    
+ 
+    .ui__input__button{
+        font-size: 30px;
+        border-radius: 20px;
+        padding: 5px 15px;
+        outline: none;
+        border: 1px solud red;
+    }
+}
+.fixed{
+    position:fixed;
+    bottom: 0;
+    right:0;
+    padding: 10px 40px;
+    .ui__input__button{
+        padding: $padding calc($padding*3)
+    }
+};
+.relative{
+    position:relative;
+};
