@@ -1,6 +1,6 @@
 import classes from './countryInfoCollection.module.scss'
 
-const Country = ({img, id,name,population,languages,borders,region,subregion}) => {
+const Country = ({img, id,name,languages,borders,region,subregion}) => {
        const languagesList = Object.values(languages)
 
     return(
@@ -12,7 +12,7 @@ const Country = ({img, id,name,population,languages,borders,region,subregion}) =
                   <div>Name: {name}</div>
                   <div>Region: {region}</div>
                   <div>Subregion: {subregion}</div>
-                  <div>Population: {population}</div>
+                  
                   <div className={classes.countries__collection__country__info__language}>Languages:{<ul>{languagesList.map((language,index)=><li key={index}>{language}</li>)}</ul>}</div>
                   <div className={classes.countries__collection__country__info__border}>Borders:{<ul>{borders&&borders.map((border,index)=><li key={index}>{border}</li>)}</ul>}</div>
                 </div>
