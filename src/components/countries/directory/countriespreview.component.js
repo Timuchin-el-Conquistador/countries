@@ -11,6 +11,7 @@ const CountriesPreview = ({filterData}) => {
     }
     return (
         <Fragment>
+              <h1 className={classes.header}>Countries of Asia</h1><span className={classes.hint}>Hover images</span>
               <div className={classes.countries__collection}>
                 {countries&& countries.map((country,index) => 
                 <Country key={index} name={country.name.official} capital={country.capital[0]} id={index}
